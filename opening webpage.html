@@ -1,0 +1,163 @@
+<!DOCTYPE html>  
+<html lang="en-US">  
+<head>  
+    <style>
+        *{
+            margin: 0;
+            padding: 0; 
+        }
+        .menu-bar
+        {
+            background-color: rgba(50, 37, 165, 0.877);
+            text-align: center;
+        }
+        .menu-bar ul{
+            display: inline-flex;
+            list-style: none;
+            color: #ffff;  
+        }
+        .menu-bar ul li{
+            width: 120px;
+            margin: 15px;
+            padding: 15px;
+        }
+        .menu-bar ul li a{
+            text-decoration: none;
+            color:rgba(30, 30, 107, 0.815);
+        }
+        .active, .menu-bar ul li:hover{
+            background:white;
+            border-radius: 3px;
+            }
+        .sub-menu-1{
+            display: none;
+        }
+        .menu-bar ul li:hover .sub-menu-1{
+            display: block;
+            margin-top: 15px;
+            margin-left: -15px;
+            position: absolute;
+            background-color:darkgrey;
+
+        }
+        .menu-bar ul li:hover .sub-menu-1 ul{
+            display: block;
+            margin: 10px;
+        }
+        .menu-bar ul li:hover .sub-menu-1 ul li{
+            width: 150px;
+            padding: 10px;
+            border-bottom: 1px dotted white;
+            background:transparent;
+            border-radius: 0;
+            text-align: left;
+        }
+        .menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+            border-bottom: none;
+        }
+        .menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+            color: white;
+        }
+        .sub-menu-2{
+            display: none;
+        }
+        .hover-me:hover .sub-menu-2{
+            position: absolute;
+            display: block;
+            margin-top: -40px;
+            margin-left: 140px;
+            background: darkgrey;
+        }
+    </style>
+<meta charset="utf-8">
+<title>Montitoring</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu-bar">
+        <ul>
+            <li class="active"><a href="#">COROLLARY</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li class="hover-me"><a href="#">corollary 1</a>
+                  <div class="sub-menu-2">
+                    <ul>
+                        <li><a href="#">machine 11</a></li>
+                        <li><a href="#">machine 12</a></li>
+                        <li><a href="#">machine 13</a></li>
+                        <li><a href="#">machine 14</a></li>
+                    </ul>
+                   </div>  
+                    
+                    
+                    
+                    
+                    </li>
+                    <li class="hover-me"><a href="#">corollary 2</a>
+                        <div class="sub-menu-2">
+                            <ul>
+                                <li><a href="#">machine 21</a></li>
+                                <li><a href="#">machine 22</a></li>
+                                <li><a href="#">machine 23</a></li>
+                                <li><a href="#">machine 24</a></li>
+                            </ul>
+                           </div>  
+                            
+                    
+                    
+                    
+                    </li>
+                    <li class="hover-me"><a href="#">corollary 3</a>
+                        <div class="sub-menu-2">
+                            <ul>
+                                <li><a href="#">machine 31</a></li>
+                                <li><a href="#">machine 32</a></li>
+                                <li><a href="#">machine 33</a></li>
+                                <li><a href="#">machine 34</a></li>
+                            </ul>
+                           </div>  
+                    
+                    
+                    
+                    
+                    </li>
+                    <li class="hover-me"><a href="#">corollary 4</a>
+                        <div class="sub-menu-2">
+                            <ul>
+                                <li><a href="#">machine 41</a></li>
+                                <li><a href="#">machine 42</a></li>
+                                <li><a href="#">machine 43</a></li>
+                                <li><a href="#">machine 44</a></li>
+                            </ul>
+                           </div>  
+                    
+                    
+                    
+                    </li>
+
+                </ul>
+
+            </div>
+            
+            
+            
+            </li>
+
+            <li class="active"><a href="#">MACHINE</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#">machine parameter 1</a></li>
+                        <li><a href="#">machine parameter 2</a></li>
+                        <li><a href="#">machine parameter 3</a></li>
+                        <li><a href="#">machine parameter 4</a></li>
+    
+                    </ul>
+    
+                </div>
+            
+            
+            
+            </li>
+        </ul>
+    </div>
+</body>
