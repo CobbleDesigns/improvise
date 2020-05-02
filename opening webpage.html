@@ -1,163 +1,53 @@
 <!DOCTYPE html>  
 <html lang="en-US">  
 <head>  
-    <style>
-        *{
-            margin: 0;
-            padding: 0; 
-        }
-        .menu-bar
-        {
-            background-color: rgba(50, 37, 165, 0.877);
-            text-align: center;
-        }
-        .menu-bar ul{
-            display: inline-flex;
-            list-style: none;
-            color: #ffff;  
-        }
-        .menu-bar ul li{
-            width: 120px;
-            margin: 15px;
-            padding: 15px;
-        }
-        .menu-bar ul li a{
-            text-decoration: none;
-            color:rgba(30, 30, 107, 0.815);
-        }
-        .active, .menu-bar ul li:hover{
-            background:white;
-            border-radius: 3px;
-            }
-        .sub-menu-1{
-            display: none;
-        }
-        .menu-bar ul li:hover .sub-menu-1{
-            display: block;
-            margin-top: 15px;
-            margin-left: -15px;
-            position: absolute;
-            background-color:darkgrey;
 
-        }
-        .menu-bar ul li:hover .sub-menu-1 ul{
-            display: block;
-            margin: 10px;
-        }
-        .menu-bar ul li:hover .sub-menu-1 ul li{
-            width: 150px;
-            padding: 10px;
-            border-bottom: 1px dotted white;
-            background:transparent;
-            border-radius: 0;
-            text-align: left;
-        }
-        .menu-bar ul li:hover .sub-menu-1 ul li:last-child{
-            border-bottom: none;
-        }
-        .menu-bar ul li:hover .sub-menu-1 ul li a:hover{
-            color: white;
-        }
-        .sub-menu-2{
-            display: none;
-        }
-        .hover-me:hover .sub-menu-2{
-            position: absolute;
-            display: block;
-            margin-top: -40px;
-            margin-left: 140px;
-            background: darkgrey;
-        }
-    </style>
+<!--bootstrap css link cdn-->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <meta charset="utf-8">
 <title>Montitoring</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="menu-bar">
-        <ul>
-            <li class="active"><a href="#">COROLLARY</a>
-            <div class="sub-menu-1">
-                <ul>
-                    <li class="hover-me"><a href="#">corollary 1</a>
-                  <div class="sub-menu-2">
-                    <ul>
-                        <li><a href="#">machine 11</a></li>
-                        <li><a href="#">machine 12</a></li>
-                        <li><a href="#">machine 13</a></li>
-                        <li><a href="#">machine 14</a></li>
-                    </ul>
-                   </div>  
-                    
-                    
-                    
-                    
-                    </li>
-                    <li class="hover-me"><a href="#">corollary 2</a>
-                        <div class="sub-menu-2">
-                            <ul>
-                                <li><a href="#">machine 21</a></li>
-                                <li><a href="#">machine 22</a></li>
-                                <li><a href="#">machine 23</a></li>
-                                <li><a href="#">machine 24</a></li>
-                            </ul>
-                           </div>  
-                            
-                    
-                    
-                    
-                    </li>
-                    <li class="hover-me"><a href="#">corollary 3</a>
-                        <div class="sub-menu-2">
-                            <ul>
-                                <li><a href="#">machine 31</a></li>
-                                <li><a href="#">machine 32</a></li>
-                                <li><a href="#">machine 33</a></li>
-                                <li><a href="#">machine 34</a></li>
-                            </ul>
-                           </div>  
-                    
-                    
-                    
-                    
-                    </li>
-                    <li class="hover-me"><a href="#">corollary 4</a>
-                        <div class="sub-menu-2">
-                            <ul>
-                                <li><a href="#">machine 41</a></li>
-                                <li><a href="#">machine 42</a></li>
-                                <li><a href="#">machine 43</a></li>
-                                <li><a href="#">machine 44</a></li>
-                            </ul>
-                           </div>  
-                    
-                    
-                    
-                    </li>
+    <nav class="navbar navbar-light navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="data-toggler-icon"></span>
+        </button>
 
-                </ul>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      COROLLARY
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">Corollary 1</a>
+                      <a class="dropdown-item" href="#">Corollary 2</a>
+                      <a class="dropdown-item" href="#">Corollary 3</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      MACHINE
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Machine 11</a>
+                        <a class="dropdown-item" href="#">Machine 12</a>
+                        <a class="dropdown-item" href="#">Machine 13</a>
+                    </div>
+                  </li>
+            </ul>
 
-            </div>
-            
-            
-            
-            </li>
-
-            <li class="active"><a href="#">MACHINE</a>
-                <div class="sub-menu-1">
-                    <ul>
-                        <li><a href="#">machine parameter 1</a></li>
-                        <li><a href="#">machine parameter 2</a></li>
-                        <li><a href="#">machine parameter 3</a></li>
-                        <li><a href="#">machine parameter 4</a></li>
+        </div>
+    </nav>
     
-                    </ul>
-    
-                </div>
-            
-            
-            
-            </li>
-        </ul>
-    </div>
+
+
+
+
+<!--bootstrap js scripts-->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 </body>
